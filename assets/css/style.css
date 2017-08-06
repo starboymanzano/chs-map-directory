@@ -1,0 +1,29 @@
+.pagination-links{
+	margin:30px 0;
+}
+
+.pagination-links strong{
+	padding: 8px 13px;
+	margin:5px;
+	background: #f4f4f4;
+	border: 1px #ccc solid;
+}
+
+a.pagination-link{
+	padding: 8px 13px;
+	margin:5px;
+	background: #f4f4f4;
+	border: 1px #ccc solid;
+}
+
+
+.style-type {
+	list-style-type: none;
+	font-size: 170%;
+	margin-bottom: 5%;
+}
+
+.center {
+	text-align: center;
+}
+
