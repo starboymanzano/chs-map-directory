@@ -21,7 +21,7 @@
 				<div class="form-group">
 						<b><input type="password" name="password" class="form-control" placeholder="Enter Password" required autofocus></b>
 				</div>
-				<button type="submit" class="btn btn-success btn-block"><b>Login</b></button>
+				<button style="background-color:#5cb85c; color:white;" type="submit" class="btn btn-success btn-block"><b>Login</b></button>
 			</div>
 		<?php echo form_close(); ?>
 	</div>
