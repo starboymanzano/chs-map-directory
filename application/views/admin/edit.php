@@ -70,61 +70,68 @@
         </nav>
         <div class="panel panel-info">
             <div class="panel-body">   
-                <?= form_open('admin/establishment/view/' . $est_info['EstID'] . '/edit'); ?>
-                    <input type="hidden" name="temp_id" value="<?= $est_info['EstID']; ?>" />
-                        <p><strong>Description: </strong></p>
-                        <p style="text-indent:2%;">
-                            <textarea required id="editor1" name="description" rows="10" cols="100"><?= preg_replace('/[\s]+/',' ', $est_info['EstDesc']); ?></textarea>
-                        </p>
+                <div class="row">
+                    <div class="col-lg-7">
+                    <?= form_open('admin/establishment/view/' . $est_info['EstID'] . '/edit'); ?>
+                        <input type="hidden" name="temp_id" value="<?= $est_info['EstID']; ?>" />
+                            <p><strong>Establishment Name: </strong></p>
+                             <p><input required class="form-control" type="text" name="est_name" value="<?= $est_info['EstName']; ?>"/></p>
 
-                        <p><strong>Walk Time:</strong></p>
-                        <p style="text-indent:2%;">
-                            <select required name="walktime">
-                                <option selected value="<?= preg_replace('/[\s]+/',' ', $est_info['EstWalkTime']); ?>"><?= preg_replace('/[\s]+/',' ', $est_info['EstWalkTime']); ?></option>
-                                <option value="10 seconds">10 seconds</option>
-                                <option value="20 seconds">20 seconds</option>
-                                <option value="30 seconds">30 seconds</option>
-                                <option value="40 seconds">40 seconds</option>
-                                <option value="50 seconds">50 seconds</option>
-                                <option value="1 minute">1 minute</option>
-                                <option value="1 minute 15 seconds">1 minute 15 seconds</option>
-                                <option value="1 minute 30 seconds">1 minute 30 seconds</option>
-                                <option value="1 minute 45 seconds">1 minute 45 seconds</option>
-                                <option value="2 minutes">2 minutes</option>
-                            </select>
-                        </p>
+                            <p><strong>Description: </strong></p>
+                            <p style="text-indent:2%;">
+                                <textarea required id="editor1" name="description" rows="10" cols="100"><?= preg_replace('/[\s]+/',' ', $est_info['EstDesc']); ?></textarea>
+                            </p>
 
-                        <p><strong>Distance:</strong></p>
-                        <p style="text-indent:2%;">
-                            <select required name="distance">
-                                <option selected value="<?= preg_replace('/[\s]+/',' ', $est_info['EstDistance']); ?>"><?= preg_replace('/[\s]+/',' ', $est_info['EstDistance']); ?></option>
-                                <option value="10 meters">10 meters</option>
-                                <option value="20 meters">20 meters</option>
-                                <option value="30 meters">30 meters</option>
-                                <option value="40 meters">40 meters</option>
-                                <option value="50 meters">50 meters</option>
-                                <option value="60 meters">60 meters</option>
-                                <option value="70 meters">70 meters</option>
-                                <option value="80 meters">80 meters</option>
-                                <option value="90 meters">90 meters</option>
-                                <option value="100 meters">100 meters</option>
-                                <option value="110 meters">110 meters</option> 
-                                <option value="120 meters">120 meters</option> 
-                                <option value="130 meters">130 meters</option> 
-                                <option value="140 meters">140 meters</option>
-                                <option value="150 meters">150 meters</option>
-                                <option value="160 meters">160 meters</option> 
-                                <option value="170 meters">170 meters</option> 
-                                <option value="180 meters">180 meters</option> 
-                                <option value="190 meters">190 meters</option> 
-                                <option value="200 meters">200 meters</option>   
-                            </select>
-                        </p><br/>
+                            <p><strong>Walk Time:</strong></p>
+                            <p style="text-indent:2%;">
+                                <select class="form-control" required name="walktime">
+                                    <option selected value="<?= preg_replace('/[\s]+/',' ', $est_info['EstWalkTime']); ?>"><?= preg_replace('/[\s]+/',' ', $est_info['EstWalkTime']); ?></option>
+                                    <option value="10 seconds">10 seconds</option>
+                                    <option value="20 seconds">20 seconds</option>
+                                    <option value="30 seconds">30 seconds</option>
+                                    <option value="40 seconds">40 seconds</option>
+                                    <option value="50 seconds">50 seconds</option>
+                                    <option value="1 minute">1 minute</option>
+                                    <option value="1 minute 15 seconds">1 minute 15 seconds</option>
+                                    <option value="1 minute 30 seconds">1 minute 30 seconds</option>
+                                    <option value="1 minute 45 seconds">1 minute 45 seconds</option>
+                                    <option value="2 minutes">2 minutes</option>
+                                </select>
+                            </p>
 
-                        <input style="background-color:#428bca; color:white;" class="btn btn-primary" type="submit" value="Update Information">
+                            <p><strong>Distance:</strong></p>
+                            <p style="text-indent:2%;">
+                                <select class="form-control" required name="distance">
+                                    <option selected value="<?= preg_replace('/[\s]+/',' ', $est_info['EstDistance']); ?>"><?= preg_replace('/[\s]+/',' ', $est_info['EstDistance']); ?></option>
+                                    <option value="10 meters">10 meters</option>
+                                    <option value="20 meters">20 meters</option>
+                                    <option value="30 meters">30 meters</option>
+                                    <option value="40 meters">40 meters</option>
+                                    <option value="50 meters">50 meters</option>
+                                    <option value="60 meters">60 meters</option>
+                                    <option value="70 meters">70 meters</option>
+                                    <option value="80 meters">80 meters</option>
+                                    <option value="90 meters">90 meters</option>
+                                    <option value="100 meters">100 meters</option>
+                                    <option value="110 meters">110 meters</option> 
+                                    <option value="120 meters">120 meters</option> 
+                                    <option value="130 meters">130 meters</option> 
+                                    <option value="140 meters">140 meters</option>
+                                    <option value="150 meters">150 meters</option>
+                                    <option value="160 meters">160 meters</option> 
+                                    <option value="170 meters">170 meters</option> 
+                                    <option value="180 meters">180 meters</option> 
+                                    <option value="190 meters">190 meters</option> 
+                                    <option value="200 meters">200 meters</option>   
+                                </select>
+                            </p><br/>
 
-                        <a style="margin-left:1%; background-color:#5bc0de; color:white;" class="btn btn-info" href="<?= site_url('admin/establishment/view/' . $est_info['EstID']); ?>">Cancel</a>   
-                <?= form_close(); ?>
+                            <input style="background-color:#428bca; color:white;" class="btn btn-primary" type="submit" value="Update Information">
+
+                            <a style="margin-left:1%; background-color:#5bc0de; color:white;" class="btn btn-info" href="<?= site_url('admin/establishment/view/' . $est_info['EstID']); ?>">Cancel</a>   
+                    <?= form_close(); ?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

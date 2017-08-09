@@ -68,13 +68,13 @@
                 </div>
             </div>
         </nav>
-        <div class="panel panel-info">
+        <div class="panel panel-primary">
             <div class="panel-heading">
-                <div class="panel-title"><?= $title . ' Information'; ?></div>
+                <div class="panel-title"><?= $title; ?></div>
             </div>
                      
                     <?php if($this->session->flashdata('establishment_updated')): ?>
-                    <?php echo '<p class="alert alert-success">'.$this->session->flashdata('establishment_updated').'</p>';?>
+                    <?php echo '<p class="alert alert-primary">'.$this->session->flashdata('establishment_updated').'</p>';?>
                     <?php endif; ?>
 
                     <?php if($this->session->flashdata('establishment_cleared')): ?>

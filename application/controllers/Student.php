@@ -100,6 +100,14 @@ class Student extends CI_Controller {
 		$this->load->view('template/footer_map');
 	}
 
+	public function help_tutorial() {
+		$data['title'] = "Help/Tutorial";
+		$this->load->view('template/header', $data);
+		$this->load->view('help', $data);
+		$this->load->view('template/footer_map');
+
+	}
+
 
 }
 ?>

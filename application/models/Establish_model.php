@@ -23,6 +23,7 @@ class Establish_model extends CI_Model {
 
 	public function set_estab_info($id = 0) {
 		$data = array(
+			'EstName' => $this->input->post('est_name'),
 			'EstDesc' => $this->input->post('description'),
 			'EstWalkTime' => $this->input->post('walktime'),
 			'EstDistance' => $this->input->post('distance')

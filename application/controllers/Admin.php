@@ -135,6 +135,7 @@ class Admin extends CI_Controller {
 			show_404();
 		}
 
+		$this->form_validation->set_rules('est_name', 'Establishment Name', 'required');
 		$this->form_validation->set_rules('description', 'Description', 'required');
 		$this->form_validation->set_rules('walktime', 'Walk Time', 'required');
 		$this->form_validation->set_rules('distance', 'Distance', 'required');

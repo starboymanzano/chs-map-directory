@@ -18,7 +18,7 @@
                             <li><a href="#owl-hero" class="page-scroll">Home</a></li>
                             <li><a href="<?= base_url() . 'announcement_main' ; ?>" class="page-scroll">Announcement</a></li>
                             <li><a href="<?= base_url() . 'map_directory' ; ?>" class="page-scroll">Map Directory</a></li>
-                            <li><a href="<?= base_url() . 'help' ; ?>" class="page-scroll">Information</a></li>
+                            <li><a href="<?= base_url() . 'help' ; ?>" class="page-scroll">Tutorial</a></li>
                         </ul>
                     </div>
                 </div>
@@ -27,29 +27,23 @@
         <div id="owl-hero" class="owl-carousel owl-theme">
             <div class="item img-responsive" style="background-image: url(<?= base_url(); ?>assets/media/sliders/Slide.jpg)">
                 <div class="caption">
-                    <h6></h6>
-                    <h1><span></span></h1>
+                    <br/><br/>
+                    <h1>Caloocan High School</h1>
+                    <h6 style="padding: 0 100px 0 100px;text-align:center"><span>Caloocan High School first stepped its foot to then Municipality of Caloocan in 1941. It was once the second largest high school in the entire Asia, with a population of 10,000 students. Now, it currently offers multi-curricular programs, complying to the standards set by the Department of Education.</span></h6>
                     <!--<a class="btn btn-transparent" href="#">Learn More</a><a class="btn btn-light" href="#">Buy Now</a>-->
                 </div>
             </div>
             <div class="item img-responsive" style="background-image: url(<?= base_url(); ?>assets/media/sliders/Slide2.jpg)">
                 <div class="caption">
-                    <h6></h6>
-                    <h1><span></span></h1>
-                     <!--<a class="btn btn-transparent" href="#">Learn More</a><a class="btn btn-light" href="#">Buy Now</a>-->
-                </div>
-            </div>
-            <div class="item img-responsive" style="background-image: url(<?= base_url(); ?>assets/media/sliders/Slide3.jpg)">
-                <div class="caption">
-                    <h6></h6>
-                    <h1><span></span></h1>
+                    <h1>Now offer 3D Map</h1>
+                    <h6 style="padding: 0 100px 0 100px;text-align:center"><span>Using Kiosk Touch Screen, you can find and navigate the Map Directory easily.</span></h6>
                      <!--<a class="btn btn-transparent" href="#">Learn More</a><a class="btn btn-light" href="#">Buy Now</a>-->
                 </div>
             </div>
             <div class="item img-responsive" style="background-image: url(<?= base_url(); ?>assets/media/sliders/Slide5.jpg)">
                 <div class="caption">
-                    <h6></h6>
-                    <h1><span></span></h1>
+                    <h1 style="padding: 0 100px 0 100px;">Check announcement at a glance</h1>
+                    <h6 style="padding: 0 100px 0 100px;text-align:center"><span>Using Kiosk Touch Screen, you can check announcement effortless.</span></h6>
                      <!--<a class="btn btn-transparent" href="#">Learn More</a><a class="btn btn-light" href="#">Buy Now</a>-->
                 </div>
             </div>

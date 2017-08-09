@@ -37,7 +37,7 @@
                             <li><a href="<?= base_url(); ?>" class="page-scroll">Home</a></li>
                             <li><a href="<?= "This is modal"; ?>" class="page-scroll" data-toggle="modal" data-target="#myModal">Announcement</a></li>
                             <li><a href="<?= base_url() . 'map_directory' ; ?>" class="page-scroll">Map Directory</a></li>
-                            <li><a href="<?= base_url() . 'help' ; ?>" class="page-scroll">Information</a></li>
+                            <li><a href="<?= base_url() . 'help' ; ?>" class="page-scroll">Tutorial</a></li>
                         </ul>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                     <tr>
                         <th>#</th>
                         <th>Name</th>
-                        <th style="width:30%">Description</th>
+                        <th style="width:20%">Description</th>
                         <th>Type</th>
                         <th>Organizer</th>
                         <th>Venue</th>
@@ -124,10 +124,10 @@
                 </thead>
                 <tbody>
                     <?php foreach($upcome as $upcoming) : ?>
-                    <tr>
+                    <tr>    
                         <td><?= $upcoming['AnnID']; ?></td>
                         <td><?= $upcoming['AnnTitle']; ?></td>
-                        <td style="width:30%"><?= $upcoming['AnnDesc']; ?></td>
+                        <td style="width:20%"><?= $upcoming['AnnDesc']; ?></td>
                         <td><?= $upcoming['TypeName']; ?></td>
                         <td><?= $upcoming['AnnOrganizer']; ?></td>
                         <td><?= $upcoming['AnnVenue']; ?></td>
@@ -148,7 +148,7 @@
                     <tr>
                         <th>#</th>
                         <th>Name</th>
-                        <th style="width:30%">Description</th>
+                        <th style="width:20%">Description</th>
                         <th>Type</th>
                         <th>Organizer</th>
                         <th>Venue</th>
@@ -161,7 +161,7 @@
                     <tr>
                         <td><?= $past['AnnID']; ?></td>
                         <td><?= $past['AnnTitle']; ?></td>
-                        <td style="width:30%"><?= $past['AnnDesc']; ?></td>
+                        <td style="width:20%"><?= $past['AnnDesc']; ?></td>
                         <td><?= $past['TypeName']; ?></td>
                         <td><?= $past['AnnOrganizer']; ?></td>
                         <td><?= $past['AnnVenue']; ?></td>
