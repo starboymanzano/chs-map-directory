@@ -97,14 +97,14 @@ class Student extends CI_Controller {
 		$this->announce_model->auto_delete();
 		$this->load->view('template/header', $data);
 		$this->load->view('announcement_main', $data);
-		$this->load->view('template/footer_map');
+		$this->load->view('template/footer_announcement');
 	}
 
 	public function help_tutorial() {
 		$data['title'] = "Help/Tutorial";
 		$this->load->view('template/header', $data);
 		$this->load->view('help', $data);
-		$this->load->view('template/footer_map');
+		$this->load->view('template/footer_announcement');
 
 	}
 

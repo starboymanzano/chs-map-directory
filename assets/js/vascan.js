@@ -1,29 +1,32 @@
-/// <reference path="(base_url + 'assets/js/babylon.d.ts')">
+var camera;
+var scene;
+var renderer;
+  
+init();
+animate();
 
-var BjsApp = BjsApp || {};
-
-BjsApp.init = function() {
-
-	 if (BABYLON.Engine.isSupported()) {
-        var canvas = document.getElementById("renderCanvas");
-        var engine = new BABYLON.Engine(canvas, true);
-
-        BABYLON.SceneLoader.Load("", "http://localhost/chs-map-directory/assets/js/babylon/chsmodel.babylon", engine, function (newScene) {
-            // Wait for textures and shaders to be ready
-            newScene.executeWhenReady(function () {
-                // Attach camera to canvas inputs
-                newScene.activeCamera.attachControl(canvas);
-
-                // Once the scene is loaded, just register a render loop to render it
-                engine.runRenderLoop(function() {
-                    newScene.render();
-                });
-            });
-        }, function (progress) {
-            // To do: give progress feedback to user
-        });
-    }
-
-
-
-};
+function init() {
+    scene = new THREE.Scene();
+    camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 1000);
+    var light = new THREE.DirectionalLight( 0xffffff );
+    light.position.set( 0, 1, 1 ).normalize();
+    scene.add(light);
+    var geometry = new THREE.CubeGeometry(10, 10, 10);
+    var material = new THREE.MeshPhongMaterial( { ambient: 0x050505, color: 0x0033ff, specular: 0x555555, shininess: 30 } );
+    var mesh = new THREE.Mesh(geometry, material );
+    mesh.position.z = -100
+    scene.add( mesh );
+    renderer = new THREE.WebGLRenderer();
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    document.body.appendChild( renderer.domElement );
+    render();
+}
+function animate() {
+    mesh.rotation.x += .05;
+    mesh.rotation.y += .05;
+    render();
+    requestAnimationFrame(animate);
+}
+function render() {
+    renderer.render(scene, camera);
+}

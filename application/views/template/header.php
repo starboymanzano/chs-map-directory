@@ -20,6 +20,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" >
 
   <style>
+
     .row{position: relative;padding:7px;}
     .post-list { 
         margin-bottom:20px;

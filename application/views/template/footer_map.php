@@ -9,13 +9,7 @@
 <script src="<?= base_url(); ?>assets/js/wow.min.js"></script>
 <script src="<?= base_url(); ?>assets/js/app.js"></script>
 <script src="<?= base_url(); ?>assets/js/drawer.min.js"></script>
-<script>var base_url = "<?= base_url(); ?>"</script>
+<script src="<?= base_url(); ?>assets/js/threejs/three.min.js"></script>
 <script src="<?= base_url(); ?>assets/js/vascan.js"></script>
-<script src="<?= base_url(); ?>assets/js/babylon.js"></script>
-<script>
-	window.addEventListener('DOMContentLoaded', function() {
-		BjsApp.init();
-	});
-</script>
 </body>
 </html>
