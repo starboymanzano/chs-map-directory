@@ -74,4 +74,4 @@ $route['admin/settings/change_password'] = 'admin/change_password';
 $route['map_directory'] = 'student/maps';
 $route['ajaxPaginationData'] = 'student/ajaxPaginationData';
 $route['announcement_main'] = 'student/announcement_main';
-$route['help'] = 'student/help_tutorial';
+$route['help'] = 'student/help_tutorial';	
