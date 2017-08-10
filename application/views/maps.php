@@ -1,3 +1,4 @@
+
 <script src="<?= base_url(); ?>assets/js/jquery-3.2.1.min.js"></script>
 <script>
     function searchFilter(page_num) {
@@ -18,7 +19,9 @@
         });
     }
 </script>
-<body class="has-drawer">
+<body class="has-drawer" ontouchstart="">
+<script src="<?= base_url(); ?>assets/js/threejs/three.min.js"></script>
+<script src="<?= base_url(); ?>assets/js/vascan.js"></script>
 <section class="main-header">
         <nav class="navbar navbar-default">
             <div class="container">
@@ -44,6 +47,35 @@
             </div>
         </nav>
 </section>
+
+<script>
+
+            var loader = new THREE.FileLoader();
+            loader.load( '<?php echo base_url(); ?>assets/js/threejs/app.json', function ( text ) {
+
+                var player = new APP.Player();
+                player.load( JSON.parse( text ) );
+                player.setSize( window.innerWidth, window.innerHeight );
+                player.play();
+
+                document.body.appendChild( player.dom );
+
+                window.addEventListener( 'resize', function () {
+                    player.setSize( window.innerWidth, window.innerHeight );
+                } );
+
+                if ( location.search === '?edit' ) {
+                    var button = document.createElement( 'a' );
+                    button.id = 'edit';
+                    button.href = 'https://threejs.org/editor/#file=' + location.href.split( '/' ).slice( 0, - 1 ).join( '/' ) + '/app.json';
+                    button.target = '_blank';
+                    button.textContent = 'EDIT';
+                    document.body.appendChild( button );
+                }
+
+            } );
+
+        </script>
 
 <div id="drawerExample" class="drawer dw-xs-10 dw-sm-6 dw-md-3 fold" aria-labelledby="drawerExample">
     <div class="drawer-controls">
@@ -84,6 +116,7 @@
         </div>
     </div>
 </div>
+
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-xl" role="document">

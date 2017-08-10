@@ -20,6 +20,12 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" >
 
   <style>
+    body { margin: 0; }
+    
+    canvas {
+      width: 100%;
+      height:100%;
+    }
 
     .row{position: relative;padding:7px;}
     .post-list { 

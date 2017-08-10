@@ -9,7 +9,6 @@
 <script src="<?= base_url(); ?>assets/js/wow.min.js"></script>
 <script src="<?= base_url(); ?>assets/js/app.js"></script>
 <script src="<?= base_url(); ?>assets/js/drawer.min.js"></script>
-<script src="<?= base_url(); ?>assets/js/threejs/three.min.js"></script>
-<script src="<?= base_url(); ?>assets/js/vascan.js"></script>
+<script>var base_url = "<?php echo base_url(); ?>"</script>
 </body>
 </html>

@@ -9,5 +9,6 @@
 <script src="<?= base_url(); ?>assets/js/lightbox.min.js"></script>
 <script src="<?= base_url(); ?>assets/js/wow.min.js"></script>
 <script src="<?= base_url(); ?>assets/js/app.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOwJ0uEC3eSeZQM_EovKWlAMe5j4J5-Fo"></script>
 </body>
 </html>
