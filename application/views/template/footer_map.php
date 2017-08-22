@@ -10,5 +10,6 @@
 <script src="<?= base_url(); ?>assets/js/app.js"></script>
 <script src="<?= base_url(); ?>assets/js/drawer.min.js"></script>
 <script>var base_url = "<?php echo base_url(); ?>"</script>
+<script src="<?= base_url(); ?>assets/js/TrackballControls.js"></script>
 </body>
 </html>
