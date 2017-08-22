@@ -1,5 +1,4 @@
 <body>
-<div class="preloader"><i class="fa fa-circle-o-notch fa-spin fa-2x"></i></div>
     <section class="main-header">
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
@@ -49,8 +48,6 @@
             </div>
         </div>
     </section>
-
-    <div id="map"></div>
     
     <footer>
         <div class="container">
